@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es2015",
+      "es5"
+    ],
+    "outDir": "./lib"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
