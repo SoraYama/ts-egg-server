@@ -2,12 +2,14 @@
   "name": "big-screen-data-server-demo",
   "description": "a simple data generator",
   "dependencies": {
-    "express": "^4.16.2",
-    "websocket": "^1.0.25"
+    "egg": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "egg-bin dev"
   },
   "devDependencies": {
-    "@types/express": "^4.11.0",
-    "@types/websocket": "0.0.36",
+    "egg-bin": "^4.3.7",
     "log4js": "^2.5.2"
-  }
+  },
+  "private": true
 }

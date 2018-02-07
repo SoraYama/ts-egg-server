@@ -1,0 +1,120 @@
+2018-02-07 17:04:56,314 ERROR 30714 [-/127.0.0.1/-/15ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
+    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
+    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
+    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
+    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
+
+pid: 30714
+hostname: houyanqideMBP.lan
+
+2018-02-07 17:07:11,660 ERROR 31037 [-/127.0.0.1/-/18ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
+    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
+    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
+    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
+    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
+
+pid: 31037
+hostname: houyanqideMBP.lan
+
+2018-02-07 17:08:05,742 ERROR 31102 [-/::1/-/5ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
+    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
+    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
+    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
+    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
+
+pid: 31102
+hostname: houyanqideMBP.lan
+
+2018-02-07 17:11:39,264 ERROR 31188 [-/::1/-/4ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
+    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
+    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
+    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
+    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
+
+pid: 31188
+hostname: houyanqideMBP.lan
+
+2018-02-07 17:19:06,305 ERROR 31339 [-/::1/-/5ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
+    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
+    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
+    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
+    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
+
+pid: 31339
+hostname: houyanqideMBP.lan
+
+2018-02-07 17:19:07,587 ERROR 31339 [-/::1/-/0ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
+    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
+    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
+    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
+    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
+
+pid: 31339
+hostname: houyanqideMBP.lan
+
+2018-02-07 17:45:04,252 ERROR 31953 [-/127.0.0.1/-/10ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
+    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
+    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
+    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
+    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
+
+pid: 31953
+hostname: houyanqideMBP.lan
+
+2018-02-07 18:00:48,893 ERROR 32547 [-/127.0.0.1/-/9ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
+    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
+    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
+    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
+    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
+    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
+
+pid: 32547
+hostname: houyanqideMBP.lan
+
