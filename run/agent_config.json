@@ -141,7 +141,8 @@
         "egg": "^2.3.0"
       },
       "scripts": {
-        "dev": "egg-bin dev"
+        "dev": "egg-bin dev",
+        "start": "tsc && npm run dev"
       },
       "devDependencies": {
         "egg-bin": "^4.3.7",

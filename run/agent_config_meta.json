@@ -137,7 +137,8 @@
       "egg": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "dev": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
+      "dev": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
+      "start": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "egg-bin": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",

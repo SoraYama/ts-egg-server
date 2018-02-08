@@ -1,11 +1,11 @@
-const Controller = require('egg').Controller
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const egg = require("egg");
+const Controller = egg.Controller;
 class HomeController extends Controller {
-
-  async index() {
-    this.ctx.body = 'Hello World';
-  }
-
+    async index() {
+        this.ctx.body = 'Hello worldssdd';
+    }
 }
-
-module.exports = HomeController;
+exports.default = HomeController;
+//# sourceMappingURL=home.js.map
