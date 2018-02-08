@@ -2,15 +2,21 @@
   "name": "big-screen-data-server-demo",
   "description": "a simple data generator",
   "dependencies": {
-    "egg": "^2.3.0"
+    "egg": "^2.3.0",
+    "egg-view-nunjucks": "^2.1.4",
+    "moment": "^2.20.1"
   },
   "scripts": {
     "dev": "egg-bin dev",
-    "start": "tsc && npm run dev"
+    "start": "tsc && npm run dev",
+    "test": "egg-bin test",
+    "cov": "egg-bin cov"
   },
   "devDependencies": {
     "egg-bin": "^4.3.7",
-    "log4js": "^2.5.2"
+    "egg-mock": "^3.14.0",
+    "log4js": "^2.5.2",
+    "mocha": "^5.0.0"
   },
   "private": true,
   "License": "MIT"

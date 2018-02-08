@@ -1,0 +1,17 @@
+import { Controller } from "egg";
+
+export default class NewsController extends Controller {
+
+  async list() {
+    const ctx = this.ctx;
+    const page = ctx.query.page || 1;
+    const newsList = await ctx.service.news.list(page);
+    await ctx.render('news/list.tpl', { list: newsList });
+  }
+}
+
+declare module 'egg' {
+  export interface IController {
+    news: NewsController;
+  }
+}

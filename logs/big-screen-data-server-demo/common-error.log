@@ -1,120 +1,137 @@
-2018-02-07 17:04:56,314 ERROR 30714 [-/127.0.0.1/-/15ms GET /] nodejs.Error: Please set config.keys first
-    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
-    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
-    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
-    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
-    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
-    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
-
-pid: 30714
+2018-02-08 15:28:11,184 ERROR 46114 [-/127.0.0.1/-/5039ms GET /news/] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+name: 'ConnectionTimeoutError'
+requestId: 1
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5023, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+pid: 46114
 hostname: houyanqideMBP.lan
 
-2018-02-07 17:07:11,660 ERROR 31037 [-/127.0.0.1/-/18ms GET /] nodejs.Error: Please set config.keys first
-    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
-    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
-    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
-    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
-    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
-    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
-
-pid: 31037
+2018-02-08 15:28:29,045 ERROR 46114 [-/127.0.0.1/-/5009ms GET /news/] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":2,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+name: 'ConnectionTimeoutError'
+requestId: 2
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5007, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+pid: 46114
 hostname: houyanqideMBP.lan
 
-2018-02-07 17:08:05,742 ERROR 31102 [-/::1/-/5ms GET /] nodejs.Error: Please set config.keys first
-    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
-    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
-    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
-    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
-    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
-    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
-
-pid: 31102
+2018-02-08 15:30:12,513 ERROR 46114 [-/127.0.0.1/-/5006ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":3,"createSocketErrorCount":0,"closeSocketCount":3,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+name: 'ConnectionTimeoutError'
+requestId: 3
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5006, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+pid: 46114
 hostname: houyanqideMBP.lan
 
-2018-02-07 17:11:39,264 ERROR 31188 [-/::1/-/4ms GET /] nodejs.Error: Please set config.keys first
-    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
-    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
-    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
-    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
-    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
-    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
-
-pid: 31188
+2018-02-08 17:02:45,349 ERROR 47646 [-/undefined/-/5032ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"hacker-news.firebaseio.com:443::::::::::":1},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+name: 'ConnectionTimeoutError'
+requestId: 1
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5028, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+headerSent: true
+pid: 47646
 hostname: houyanqideMBP.lan
 
-2018-02-07 17:19:06,305 ERROR 31339 [-/::1/-/5ms GET /] nodejs.Error: Please set config.keys first
-    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
-    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
-    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
-    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
-    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
-    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
-
-pid: 31339
+2018-02-08 17:02:49,287 ERROR 47646 [-/127.0.0.1/-/5006ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":2,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+name: 'ConnectionTimeoutError'
+requestId: 2
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5004, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+pid: 47646
 hostname: houyanqideMBP.lan
 
-2018-02-07 17:19:07,587 ERROR 31339 [-/::1/-/0ms GET /] nodejs.Error: Please set config.keys first
-    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
-    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
-    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
-    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
-    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
-    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
-
-pid: 31339
+2018-02-08 17:03:49,132 ERROR 47738 [-/127.0.0.1/-/5034ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+name: 'ConnectionTimeoutError'
+requestId: 1
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5022, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+pid: 47738
 hostname: houyanqideMBP.lan
 
-2018-02-07 17:45:04,252 ERROR 31953 [-/127.0.0.1/-/10ms GET /] nodejs.Error: Please set config.keys first
-    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
-    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
-    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
-    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
-    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
-    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
-
-pid: 31953
+2018-02-08 17:05:48,033 ERROR 47871 [-/127.0.0.1/-/30042ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 30000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+name: 'ConnectionTimeoutError'
+requestId: 1
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 30027, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+pid: 47871
 hostname: houyanqideMBP.lan
 
-2018-02-07 18:00:48,893 ERROR 32547 [-/127.0.0.1/-/9ms GET /] nodejs.Error: Please set config.keys first
-    at Application.get keys [as keys] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/lib/application.js:246:15)
-    at Object.get cookies [as cookies] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/app/extend/context.js:18:66)
-    at Object.get [egg-security#CSRF_SECRET] (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:77:33)
-    at Object.ensureCsrfSecret (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/app/extend/context.js:88:13)
-    at csrf (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:34:12
-    at dispatch (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:42:32)
-    at next (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-compose/index.js:43:18)
-    at session (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/koa-session/index.js:41:13)
-
-pid: 32547
+2018-02-08 17:07:39,829 ERROR 47952 [-/127.0.0.1/-/6376ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/item/16330219.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":5,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"hacker-news.firebaseio.com:443::::::::::":4},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+name: 'ConnectionTimeoutError'
+requestId: 3
+data: undefined
+path: '/v0/item/16330219.json'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5003, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/item/16330219.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+pid: 47952
 hostname: houyanqideMBP.lan
 

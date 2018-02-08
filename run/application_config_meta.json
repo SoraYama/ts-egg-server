@@ -1,5 +1,22 @@
 {
   "keys": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/config.default.js",
+  "view": {
+    "defaultViewEngine": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/config.default.js",
+    "mapping": {
+      ".tpl": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/config.default.js"
+    },
+    "root": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/config.default.js"
+  },
+  "middleware": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/config.default.js",
+  "news": {
+    "pageSize": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/config.default.js",
+    "serverUrl": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/config.default.js"
+  },
+  "robot": {
+    "ua": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/config.default.js"
+  },
   "session": {
     "maxAge": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-session/config/config.default.js",
     "key": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-session/config/config.default.js",
@@ -117,12 +134,12 @@
     "buffer": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-static/config/config.default.js",
     "maxFiles": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-static/config/config.default.js"
   },
-  "view": {
-    "root": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/config.local.js",
-    "defaultExtension": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/config.default.js",
-    "defaultViewEngine": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/config.default.js",
-    "mapping": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/config.default.js"
+  "nunjucks": {
+    "autoescape": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view-nunjucks/config/config.local.js"
   },
   "env": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
   "name": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
@@ -134,17 +151,24 @@
     "name": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
     "description": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
     "dependencies": {
-      "egg": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
+      "egg": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
+      "moment": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
     },
     "scripts": {
       "dev": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
-      "start": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
+      "start": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
+      "test": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
+      "cov": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "egg-bin": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
-      "log4js": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
+      "egg-mock": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
+      "log4js": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
+      "mocha": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
     },
-    "private": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
+    "private": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
+    "License": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js"
   },
   "baseDir": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",
   "HOME": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/config.default.js",

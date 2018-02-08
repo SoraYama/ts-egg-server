@@ -1,286 +1,132 @@
-2018-02-07 17:01:44,449 INFO 30714 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:01:44,482 INFO 30714 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:01:44,482 INFO 30714 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:01:44,604 INFO 30714 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:01:44,610 INFO 30714 [egg-security] use csrf middleware
-2018-02-07 17:01:44,611 INFO 30714 [egg-security] use methodnoallow middleware
-2018-02-07 17:01:44,612 INFO 30714 [egg-security] use noopen middleware
-2018-02-07 17:01:44,613 INFO 30714 [egg-security] use nosniff middleware
-2018-02-07 17:01:44,614 INFO 30714 [egg-security] use xssProtection middleware
-2018-02-07 17:01:44,618 INFO 30714 [egg-security] use xframe middleware
-2018-02-07 17:01:44,619 INFO 30714 [egg-security] use dta middleware
-2018-02-07 17:01:44,619 INFO 30714 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:01:44,710 INFO 30714 [egg-watcher:app] watcher start success
-2018-02-07 17:06:23,734 INFO 30902 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:06:23,869 INFO 30902 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:06:23,870 INFO 30902 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:06:24,158 INFO 30902 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:06:24,163 INFO 30902 [egg-security] use csrf middleware
-2018-02-07 17:06:24,165 INFO 30902 [egg-security] use methodnoallow middleware
-2018-02-07 17:06:24,166 INFO 30902 [egg-security] use noopen middleware
-2018-02-07 17:06:24,167 INFO 30902 [egg-security] use nosniff middleware
-2018-02-07 17:06:24,168 INFO 30902 [egg-security] use xssProtection middleware
-2018-02-07 17:06:24,169 INFO 30902 [egg-security] use xframe middleware
-2018-02-07 17:06:24,170 INFO 30902 [egg-security] use dta middleware
-2018-02-07 17:06:24,170 INFO 30902 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:06:24,266 INFO 30902 [egg-watcher:app] watcher start success
-2018-02-07 17:06:25,496 INFO 30929 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:06:25,559 INFO 30929 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:06:25,559 INFO 30929 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:06:25,662 INFO 30929 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:06:25,666 INFO 30929 [egg-security] use csrf middleware
-2018-02-07 17:06:25,667 INFO 30929 [egg-security] use methodnoallow middleware
-2018-02-07 17:06:25,667 INFO 30929 [egg-security] use noopen middleware
-2018-02-07 17:06:25,668 INFO 30929 [egg-security] use nosniff middleware
-2018-02-07 17:06:25,669 INFO 30929 [egg-security] use xssProtection middleware
-2018-02-07 17:06:25,669 INFO 30929 [egg-security] use xframe middleware
-2018-02-07 17:06:25,669 INFO 30929 [egg-security] use dta middleware
-2018-02-07 17:06:25,669 INFO 30929 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:06:25,706 INFO 30929 [egg-watcher:app] watcher start success
-2018-02-07 17:06:41,029 INFO 30987 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:06:41,073 INFO 30987 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:06:41,073 INFO 30987 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:06:41,165 INFO 30987 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:06:41,168 INFO 30987 [egg-security] use csrf middleware
-2018-02-07 17:06:41,170 INFO 30987 [egg-security] use methodnoallow middleware
-2018-02-07 17:06:41,170 INFO 30987 [egg-security] use noopen middleware
-2018-02-07 17:06:41,171 INFO 30987 [egg-security] use nosniff middleware
-2018-02-07 17:06:41,172 INFO 30987 [egg-security] use xssProtection middleware
-2018-02-07 17:06:41,173 INFO 30987 [egg-security] use xframe middleware
-2018-02-07 17:06:41,174 INFO 30987 [egg-security] use dta middleware
-2018-02-07 17:06:41,174 INFO 30987 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:06:41,212 INFO 30987 [egg-watcher:app] watcher start success
-2018-02-07 17:07:02,681 INFO 31037 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:07:02,745 INFO 31037 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:07:02,745 INFO 31037 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:07:02,901 INFO 31037 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:07:02,911 INFO 31037 [egg-security] use csrf middleware
-2018-02-07 17:07:02,913 INFO 31037 [egg-security] use methodnoallow middleware
-2018-02-07 17:07:02,916 INFO 31037 [egg-security] use noopen middleware
-2018-02-07 17:07:02,917 INFO 31037 [egg-security] use nosniff middleware
-2018-02-07 17:07:02,918 INFO 31037 [egg-security] use xssProtection middleware
-2018-02-07 17:07:02,918 INFO 31037 [egg-security] use xframe middleware
-2018-02-07 17:07:02,919 INFO 31037 [egg-security] use dta middleware
-2018-02-07 17:07:02,920 INFO 31037 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:07:03,041 INFO 31037 [egg-watcher:app] watcher start success
-2018-02-07 17:07:38,518 INFO 31102 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:07:38,572 INFO 31102 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:07:38,572 INFO 31102 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:07:38,643 INFO 31102 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:07:38,647 INFO 31102 [egg-security] use csrf middleware
-2018-02-07 17:07:38,651 INFO 31102 [egg-security] use methodnoallow middleware
-2018-02-07 17:07:38,654 INFO 31102 [egg-security] use noopen middleware
-2018-02-07 17:07:38,655 INFO 31102 [egg-security] use nosniff middleware
-2018-02-07 17:07:38,656 INFO 31102 [egg-security] use xssProtection middleware
-2018-02-07 17:07:38,659 INFO 31102 [egg-security] use xframe middleware
-2018-02-07 17:07:38,660 INFO 31102 [egg-security] use dta middleware
-2018-02-07 17:07:38,660 INFO 31102 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:07:38,705 INFO 31102 [egg-watcher:app] watcher start success
-2018-02-07 17:11:34,207 INFO 31188 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:11:34,240 INFO 31188 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:11:34,240 INFO 31188 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:11:34,301 INFO 31188 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:11:34,305 INFO 31188 [egg-security] use csrf middleware
-2018-02-07 17:11:34,307 INFO 31188 [egg-security] use methodnoallow middleware
-2018-02-07 17:11:34,308 INFO 31188 [egg-security] use noopen middleware
-2018-02-07 17:11:34,309 INFO 31188 [egg-security] use nosniff middleware
-2018-02-07 17:11:34,310 INFO 31188 [egg-security] use xssProtection middleware
-2018-02-07 17:11:34,311 INFO 31188 [egg-security] use xframe middleware
-2018-02-07 17:11:34,312 INFO 31188 [egg-security] use dta middleware
-2018-02-07 17:11:34,312 INFO 31188 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:11:34,343 INFO 31188 [egg-watcher:app] watcher start success
-2018-02-07 17:19:01,344 INFO 31339 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:19:01,410 INFO 31339 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:19:01,410 INFO 31339 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:19:01,488 INFO 31339 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:19:01,490 INFO 31339 [egg-security] use csrf middleware
-2018-02-07 17:19:01,492 INFO 31339 [egg-security] use methodnoallow middleware
-2018-02-07 17:19:01,493 INFO 31339 [egg-security] use noopen middleware
-2018-02-07 17:19:01,493 INFO 31339 [egg-security] use nosniff middleware
-2018-02-07 17:19:01,494 INFO 31339 [egg-security] use xssProtection middleware
-2018-02-07 17:19:01,496 INFO 31339 [egg-security] use xframe middleware
-2018-02-07 17:19:01,496 INFO 31339 [egg-security] use dta middleware
-2018-02-07 17:19:01,496 INFO 31339 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:19:01,549 INFO 31339 [egg-watcher:app] watcher start success
-2018-02-07 17:19:17,920 INFO 31406 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:19:18,083 INFO 31406 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:19:18,083 INFO 31406 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:19:18,213 INFO 31406 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:19:18,219 INFO 31406 [egg-security] use csrf middleware
-2018-02-07 17:19:18,222 INFO 31406 [egg-security] use methodnoallow middleware
-2018-02-07 17:19:18,223 INFO 31406 [egg-security] use noopen middleware
-2018-02-07 17:19:18,223 INFO 31406 [egg-security] use nosniff middleware
-2018-02-07 17:19:18,223 INFO 31406 [egg-security] use xssProtection middleware
-2018-02-07 17:19:18,224 INFO 31406 [egg-security] use xframe middleware
-2018-02-07 17:19:18,224 INFO 31406 [egg-security] use dta middleware
-2018-02-07 17:19:18,224 INFO 31406 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:19:18,256 INFO 31406 [egg-watcher:app] watcher start success
-2018-02-07 17:21:37,918 INFO 31628 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:21:37,948 INFO 31628 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:21:37,948 INFO 31628 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:21:38,010 INFO 31628 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:21:38,014 INFO 31628 [egg-security] use csrf middleware
-2018-02-07 17:21:38,015 INFO 31628 [egg-security] use methodnoallow middleware
-2018-02-07 17:21:38,015 INFO 31628 [egg-security] use noopen middleware
-2018-02-07 17:21:38,016 INFO 31628 [egg-security] use nosniff middleware
-2018-02-07 17:21:38,016 INFO 31628 [egg-security] use xssProtection middleware
-2018-02-07 17:21:38,017 INFO 31628 [egg-security] use xframe middleware
-2018-02-07 17:21:38,017 INFO 31628 [egg-security] use dta middleware
-2018-02-07 17:21:38,017 INFO 31628 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:21:38,065 INFO 31628 [egg-watcher:app] watcher start success
-2018-02-07 17:44:44,543 INFO 31889 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:44:44,584 INFO 31889 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:44:44,584 INFO 31889 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:44:44,661 INFO 31889 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:44:44,666 INFO 31889 [egg-security] use csrf middleware
-2018-02-07 17:44:44,668 INFO 31889 [egg-security] use methodnoallow middleware
-2018-02-07 17:44:44,669 INFO 31889 [egg-security] use noopen middleware
-2018-02-07 17:44:44,669 INFO 31889 [egg-security] use nosniff middleware
-2018-02-07 17:44:44,671 INFO 31889 [egg-security] use xssProtection middleware
-2018-02-07 17:44:44,672 INFO 31889 [egg-security] use xframe middleware
-2018-02-07 17:44:44,673 INFO 31889 [egg-security] use dta middleware
-2018-02-07 17:44:44,673 INFO 31889 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:44:44,827 INFO 31889 [egg-watcher:app] watcher start success
-2018-02-07 17:44:56,329 INFO 31953 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:44:56,360 INFO 31953 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:44:56,360 INFO 31953 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:44:56,396 INFO 31953 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:44:56,399 INFO 31953 [egg-security] use csrf middleware
-2018-02-07 17:44:56,400 INFO 31953 [egg-security] use methodnoallow middleware
-2018-02-07 17:44:56,401 INFO 31953 [egg-security] use noopen middleware
-2018-02-07 17:44:56,401 INFO 31953 [egg-security] use nosniff middleware
-2018-02-07 17:44:56,402 INFO 31953 [egg-security] use xssProtection middleware
-2018-02-07 17:44:56,402 INFO 31953 [egg-security] use xframe middleware
-2018-02-07 17:44:56,402 INFO 31953 [egg-security] use dta middleware
-2018-02-07 17:44:56,402 INFO 31953 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:44:56,462 INFO 31953 [egg-watcher:app] watcher start success
-2018-02-07 17:45:28,154 INFO 32079 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:45:28,244 INFO 32079 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:45:28,244 INFO 32079 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:45:28,486 INFO 32079 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:45:28,498 INFO 32079 [egg-security] use csrf middleware
-2018-02-07 17:45:28,500 INFO 32079 [egg-security] use methodnoallow middleware
-2018-02-07 17:45:28,501 INFO 32079 [egg-security] use noopen middleware
-2018-02-07 17:45:28,502 INFO 32079 [egg-security] use nosniff middleware
-2018-02-07 17:45:28,502 INFO 32079 [egg-security] use xssProtection middleware
-2018-02-07 17:45:28,503 INFO 32079 [egg-security] use xframe middleware
-2018-02-07 17:45:28,504 INFO 32079 [egg-security] use dta middleware
-2018-02-07 17:45:28,504 INFO 32079 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:45:28,696 INFO 32079 [egg-watcher:app] watcher start success
-2018-02-07 17:45:29,878 INFO 32097 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:45:29,923 INFO 32097 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:45:29,923 INFO 32097 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:45:29,997 INFO 32097 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:45:30,003 INFO 32097 [egg-security] use csrf middleware
-2018-02-07 17:45:30,004 INFO 32097 [egg-security] use methodnoallow middleware
-2018-02-07 17:45:30,009 INFO 32097 [egg-security] use noopen middleware
-2018-02-07 17:45:30,009 INFO 32097 [egg-security] use nosniff middleware
-2018-02-07 17:45:30,010 INFO 32097 [egg-security] use xssProtection middleware
-2018-02-07 17:45:30,010 INFO 32097 [egg-security] use xframe middleware
-2018-02-07 17:45:30,011 INFO 32097 [egg-security] use dta middleware
-2018-02-07 17:45:30,011 INFO 32097 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:45:30,084 INFO 32097 [egg-watcher:app] watcher start success
-2018-02-07 17:45:35,485 INFO 32147 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 17:45:35,535 INFO 32147 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 17:45:35,535 INFO 32147 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 17:45:35,582 INFO 32147 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 17:45:35,586 INFO 32147 [egg-security] use csrf middleware
-2018-02-07 17:45:35,588 INFO 32147 [egg-security] use methodnoallow middleware
-2018-02-07 17:45:35,588 INFO 32147 [egg-security] use noopen middleware
-2018-02-07 17:45:35,588 INFO 32147 [egg-security] use nosniff middleware
-2018-02-07 17:45:35,589 INFO 32147 [egg-security] use xssProtection middleware
-2018-02-07 17:45:35,589 INFO 32147 [egg-security] use xframe middleware
-2018-02-07 17:45:35,590 INFO 32147 [egg-security] use dta middleware
-2018-02-07 17:45:35,590 INFO 32147 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 17:45:35,644 INFO 32147 [egg-watcher:app] watcher start success
-2018-02-07 18:00:45,633 INFO 32547 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 18:00:45,673 INFO 32547 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 18:00:45,673 INFO 32547 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 18:00:45,749 INFO 32547 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 18:00:45,752 INFO 32547 [egg-security] use csrf middleware
-2018-02-07 18:00:45,754 INFO 32547 [egg-security] use methodnoallow middleware
-2018-02-07 18:00:45,754 INFO 32547 [egg-security] use noopen middleware
-2018-02-07 18:00:45,755 INFO 32547 [egg-security] use nosniff middleware
-2018-02-07 18:00:45,756 INFO 32547 [egg-security] use xssProtection middleware
-2018-02-07 18:00:45,756 INFO 32547 [egg-security] use xframe middleware
-2018-02-07 18:00:45,757 INFO 32547 [egg-security] use dta middleware
-2018-02-07 18:00:45,757 INFO 32547 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 18:00:45,880 INFO 32547 [egg-watcher:app] watcher start success
-2018-02-07 19:14:53,491 INFO 34124 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-07 19:14:53,523 INFO 34124 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-07 19:14:53,523 INFO 34124 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-07 19:14:53,593 INFO 34124 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-07 19:14:53,597 INFO 34124 [egg-security] use csrf middleware
-2018-02-07 19:14:53,598 INFO 34124 [egg-security] use methodnoallow middleware
-2018-02-07 19:14:53,599 INFO 34124 [egg-security] use noopen middleware
-2018-02-07 19:14:53,599 INFO 34124 [egg-security] use nosniff middleware
-2018-02-07 19:14:53,600 INFO 34124 [egg-security] use xssProtection middleware
-2018-02-07 19:14:53,600 INFO 34124 [egg-security] use xframe middleware
-2018-02-07 19:14:53,601 INFO 34124 [egg-security] use dta middleware
-2018-02-07 19:14:53,601 INFO 34124 [egg-security] compose 7 middlewares into one security middleware
-2018-02-07 19:14:53,655 INFO 34124 [egg-watcher:app] watcher start success
-2018-02-08 10:52:42,686 INFO 37824 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-08 10:52:42,775 INFO 37824 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-08 10:52:42,776 INFO 37824 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-08 10:52:42,911 INFO 37824 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-08 10:52:42,916 INFO 37824 [egg-security] use csrf middleware
-2018-02-08 10:52:42,917 INFO 37824 [egg-security] use methodnoallow middleware
-2018-02-08 10:52:42,918 INFO 37824 [egg-security] use noopen middleware
-2018-02-08 10:52:42,919 INFO 37824 [egg-security] use nosniff middleware
-2018-02-08 10:52:42,921 INFO 37824 [egg-security] use xssProtection middleware
-2018-02-08 10:52:42,922 INFO 37824 [egg-security] use xframe middleware
-2018-02-08 10:52:42,922 INFO 37824 [egg-security] use dta middleware
-2018-02-08 10:52:42,922 INFO 37824 [egg-security] compose 7 middlewares into one security middleware
-2018-02-08 10:52:43,007 INFO 37824 [egg-watcher:app] watcher start success
-2018-02-08 10:53:34,485 INFO 37974 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-08 10:53:34,542 INFO 37974 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-08 10:53:34,542 INFO 37974 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-08 10:53:34,585 INFO 37974 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-08 10:53:34,588 INFO 37974 [egg-security] use csrf middleware
-2018-02-08 10:53:34,590 INFO 37974 [egg-security] use methodnoallow middleware
-2018-02-08 10:53:34,590 INFO 37974 [egg-security] use noopen middleware
-2018-02-08 10:53:34,591 INFO 37974 [egg-security] use nosniff middleware
-2018-02-08 10:53:34,591 INFO 37974 [egg-security] use xssProtection middleware
-2018-02-08 10:53:34,591 INFO 37974 [egg-security] use xframe middleware
-2018-02-08 10:53:34,592 INFO 37974 [egg-security] use dta middleware
-2018-02-08 10:53:34,592 INFO 37974 [egg-security] compose 7 middlewares into one security middleware
-2018-02-08 10:53:34,631 INFO 37974 [egg-watcher:app] watcher start success
-2018-02-08 10:54:39,741 INFO 38107 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-08 10:54:39,792 INFO 38107 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-08 10:54:39,796 INFO 38107 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-08 10:54:40,018 INFO 38107 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-08 10:54:40,044 INFO 38107 [egg-security] use csrf middleware
-2018-02-08 10:54:40,046 INFO 38107 [egg-security] use methodnoallow middleware
-2018-02-08 10:54:40,048 INFO 38107 [egg-security] use noopen middleware
-2018-02-08 10:54:40,051 INFO 38107 [egg-security] use nosniff middleware
-2018-02-08 10:54:40,051 INFO 38107 [egg-security] use xssProtection middleware
-2018-02-08 10:54:40,052 INFO 38107 [egg-security] use xframe middleware
-2018-02-08 10:54:40,055 INFO 38107 [egg-security] use dta middleware
-2018-02-08 10:54:40,055 INFO 38107 [egg-security] compose 7 middlewares into one security middleware
-2018-02-08 10:54:40,129 INFO 38107 [egg-watcher:app] watcher start success
-2018-02-08 11:08:37,979 INFO 38992 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-08 11:08:38,019 INFO 38992 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-08 11:08:38,019 INFO 38992 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-08 11:08:38,147 INFO 38992 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-08 11:08:38,155 INFO 38992 [egg-security] use csrf middleware
-2018-02-08 11:08:38,159 INFO 38992 [egg-security] use methodnoallow middleware
-2018-02-08 11:08:38,160 INFO 38992 [egg-security] use noopen middleware
-2018-02-08 11:08:38,161 INFO 38992 [egg-security] use nosniff middleware
-2018-02-08 11:08:38,162 INFO 38992 [egg-security] use xssProtection middleware
-2018-02-08 11:08:38,162 INFO 38992 [egg-security] use xframe middleware
-2018-02-08 11:08:38,163 INFO 38992 [egg-security] use dta middleware
-2018-02-08 11:08:38,163 INFO 38992 [egg-security] compose 7 middlewares into one security middleware
-2018-02-08 11:08:38,206 INFO 38992 [egg-watcher:app] watcher start success
-2018-02-08 11:08:47,901 INFO 39052 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
-2018-02-08 11:08:47,959 INFO 39052 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
-2018-02-08 11:08:47,959 INFO 39052 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
-2018-02-08 11:08:48,008 INFO 39052 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
-2018-02-08 11:08:48,011 INFO 39052 [egg-security] use csrf middleware
-2018-02-08 11:08:48,012 INFO 39052 [egg-security] use methodnoallow middleware
-2018-02-08 11:08:48,013 INFO 39052 [egg-security] use noopen middleware
-2018-02-08 11:08:48,013 INFO 39052 [egg-security] use nosniff middleware
-2018-02-08 11:08:48,014 INFO 39052 [egg-security] use xssProtection middleware
-2018-02-08 11:08:48,015 INFO 39052 [egg-security] use xframe middleware
-2018-02-08 11:08:48,015 INFO 39052 [egg-security] use dta middleware
-2018-02-08 11:08:48,015 INFO 39052 [egg-security] compose 7 middlewares into one security middleware
-2018-02-08 11:08:48,067 INFO 39052 [egg-watcher:app] watcher start success
+2018-02-08 14:57:17,544 INFO 45711 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"unittest","level":"INFO","consoleLevel":"WARN","disableConsoleAfterReady":false,"outputJSON":false,"buffer":false,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 14:57:17,585 INFO 45711 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 14:57:17,585 INFO 45711 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 14:57:17,683 INFO 45711 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 14:57:17,686 INFO 45711 [egg-security] use csrf middleware
+2018-02-08 14:57:17,687 INFO 45711 [egg-security] use methodnoallow middleware
+2018-02-08 14:57:17,688 INFO 45711 [egg-security] use noopen middleware
+2018-02-08 14:57:17,689 INFO 45711 [egg-security] use nosniff middleware
+2018-02-08 14:57:17,690 INFO 45711 [egg-security] use xssProtection middleware
+2018-02-08 14:57:17,690 INFO 45711 [egg-security] use xframe middleware
+2018-02-08 14:57:17,691 INFO 45711 [egg-security] use dta middleware
+2018-02-08 14:57:17,691 INFO 45711 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 14:57:17,748 INFO 45711 [egg-watcher:app] watcher start success
+2018-02-08 15:21:43,186 INFO 45949 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 15:21:43,241 INFO 45949 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 15:21:43,241 INFO 45949 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 15:21:43,372 INFO 45949 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 15:21:43,376 INFO 45949 [egg-security] use csrf middleware
+2018-02-08 15:21:43,378 INFO 45949 [egg-security] use methodnoallow middleware
+2018-02-08 15:21:43,381 INFO 45949 [egg-security] use noopen middleware
+2018-02-08 15:21:43,383 INFO 45949 [egg-security] use nosniff middleware
+2018-02-08 15:21:43,384 INFO 45949 [egg-security] use xssProtection middleware
+2018-02-08 15:21:43,385 INFO 45949 [egg-security] use xframe middleware
+2018-02-08 15:21:43,386 INFO 45949 [egg-security] use dta middleware
+2018-02-08 15:21:43,386 INFO 45949 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 15:21:43,453 INFO 45949 [egg-watcher:app] watcher start success
+2018-02-08 15:21:54,144 INFO 45949 [egg-view-nunjucks] loading templates from ["/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/view"]
+2018-02-08 15:26:54,317 INFO 46114 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 15:26:54,364 INFO 46114 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 15:26:54,364 INFO 46114 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 15:26:54,465 INFO 46114 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 15:26:54,469 INFO 46114 [egg-security] use csrf middleware
+2018-02-08 15:26:54,470 INFO 46114 [egg-security] use methodnoallow middleware
+2018-02-08 15:26:54,472 INFO 46114 [egg-security] use noopen middleware
+2018-02-08 15:26:54,473 INFO 46114 [egg-security] use nosniff middleware
+2018-02-08 15:26:54,474 INFO 46114 [egg-security] use xssProtection middleware
+2018-02-08 15:26:54,474 INFO 46114 [egg-security] use xframe middleware
+2018-02-08 15:26:54,475 INFO 46114 [egg-security] use dta middleware
+2018-02-08 15:26:54,475 INFO 46114 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 15:26:54,508 INFO 46114 [egg-watcher:app] watcher start success
+2018-02-08 15:45:51,450 INFO 46392 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 15:45:51,638 INFO 46392 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 15:45:51,639 INFO 46392 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 15:45:51,868 INFO 46392 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 15:45:51,879 INFO 46392 [egg-security] use csrf middleware
+2018-02-08 15:45:51,884 INFO 46392 [egg-security] use methodnoallow middleware
+2018-02-08 15:45:51,898 INFO 46392 [egg-security] use noopen middleware
+2018-02-08 15:45:51,914 INFO 46392 [egg-security] use nosniff middleware
+2018-02-08 15:45:51,926 INFO 46392 [egg-security] use xssProtection middleware
+2018-02-08 15:45:51,927 INFO 46392 [egg-security] use xframe middleware
+2018-02-08 15:45:51,931 INFO 46392 [egg-security] use dta middleware
+2018-02-08 15:45:51,931 INFO 46392 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 15:45:52,003 INFO 46392 [egg-watcher:app] watcher start success
+2018-02-08 17:02:15,126 INFO 47646 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 17:02:15,177 INFO 47646 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 17:02:15,177 INFO 47646 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 17:02:15,260 INFO 47646 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 17:02:15,265 INFO 47646 [egg-security] use csrf middleware
+2018-02-08 17:02:15,267 INFO 47646 [egg-security] use methodnoallow middleware
+2018-02-08 17:02:15,268 INFO 47646 [egg-security] use noopen middleware
+2018-02-08 17:02:15,270 INFO 47646 [egg-security] use nosniff middleware
+2018-02-08 17:02:15,271 INFO 47646 [egg-security] use xssProtection middleware
+2018-02-08 17:02:15,272 INFO 47646 [egg-security] use xframe middleware
+2018-02-08 17:02:15,272 INFO 47646 [egg-security] use dta middleware
+2018-02-08 17:02:15,272 INFO 47646 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 17:02:15,309 INFO 47646 [egg-watcher:app] watcher start success
+2018-02-08 17:03:22,565 INFO 47738 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 17:03:22,607 INFO 47738 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 17:03:22,607 INFO 47738 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 17:03:22,736 INFO 47738 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 17:03:22,741 INFO 47738 [egg-security] use csrf middleware
+2018-02-08 17:03:22,744 INFO 47738 [egg-security] use methodnoallow middleware
+2018-02-08 17:03:22,745 INFO 47738 [egg-security] use noopen middleware
+2018-02-08 17:03:22,748 INFO 47738 [egg-security] use nosniff middleware
+2018-02-08 17:03:22,750 INFO 47738 [egg-security] use xssProtection middleware
+2018-02-08 17:03:22,751 INFO 47738 [egg-security] use xframe middleware
+2018-02-08 17:03:22,752 INFO 47738 [egg-security] use dta middleware
+2018-02-08 17:03:22,752 INFO 47738 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 17:03:22,801 INFO 47738 [egg-watcher:app] watcher start success
+2018-02-08 17:04:34,922 INFO 47815 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 17:04:34,962 INFO 47815 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 17:04:34,962 INFO 47815 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 17:04:35,046 INFO 47815 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 17:04:35,052 INFO 47815 [egg-security] use csrf middleware
+2018-02-08 17:04:35,054 INFO 47815 [egg-security] use methodnoallow middleware
+2018-02-08 17:04:35,055 INFO 47815 [egg-security] use noopen middleware
+2018-02-08 17:04:35,056 INFO 47815 [egg-security] use nosniff middleware
+2018-02-08 17:04:35,057 INFO 47815 [egg-security] use xssProtection middleware
+2018-02-08 17:04:35,057 INFO 47815 [egg-security] use xframe middleware
+2018-02-08 17:04:35,058 INFO 47815 [egg-security] use dta middleware
+2018-02-08 17:04:35,058 INFO 47815 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 17:04:35,098 INFO 47815 [egg-watcher:app] watcher start success
+2018-02-08 17:05:10,999 INFO 47871 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 17:05:11,129 INFO 47871 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 17:05:11,129 INFO 47871 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 17:05:11,231 INFO 47871 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 17:05:11,239 INFO 47871 [egg-security] use csrf middleware
+2018-02-08 17:05:11,241 INFO 47871 [egg-security] use methodnoallow middleware
+2018-02-08 17:05:11,243 INFO 47871 [egg-security] use noopen middleware
+2018-02-08 17:05:11,244 INFO 47871 [egg-security] use nosniff middleware
+2018-02-08 17:05:11,245 INFO 47871 [egg-security] use xssProtection middleware
+2018-02-08 17:05:11,247 INFO 47871 [egg-security] use xframe middleware
+2018-02-08 17:05:11,247 INFO 47871 [egg-security] use dta middleware
+2018-02-08 17:05:11,248 INFO 47871 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 17:05:11,294 INFO 47871 [egg-watcher:app] watcher start success
+2018-02-08 17:06:55,548 INFO 47952 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 17:06:55,595 INFO 47952 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 17:06:55,595 INFO 47952 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 17:06:55,649 INFO 47952 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 17:06:55,654 INFO 47952 [egg-security] use csrf middleware
+2018-02-08 17:06:55,655 INFO 47952 [egg-security] use methodnoallow middleware
+2018-02-08 17:06:55,656 INFO 47952 [egg-security] use noopen middleware
+2018-02-08 17:06:55,657 INFO 47952 [egg-security] use nosniff middleware
+2018-02-08 17:06:55,657 INFO 47952 [egg-security] use xssProtection middleware
+2018-02-08 17:06:55,658 INFO 47952 [egg-security] use xframe middleware
+2018-02-08 17:06:55,658 INFO 47952 [egg-security] use dta middleware
+2018-02-08 17:06:55,658 INFO 47952 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 17:06:55,733 INFO 47952 [egg-watcher:app] watcher start success
+2018-02-08 17:08:29,765 INFO 48030 [egg:logger] init all loggers with options: {"dir":"/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"big-screen-data-server-demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-02-08 17:08:29,801 INFO 48030 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-02-08 17:08:29,801 INFO 48030 [egg-schedule]: register schedule /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-02-08 17:08:29,903 INFO 48030 [egg-static] starting static serve /public/ -> /Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/public
+2018-02-08 17:08:29,907 INFO 48030 [egg-security] use csrf middleware
+2018-02-08 17:08:29,909 INFO 48030 [egg-security] use methodnoallow middleware
+2018-02-08 17:08:29,910 INFO 48030 [egg-security] use noopen middleware
+2018-02-08 17:08:29,911 INFO 48030 [egg-security] use nosniff middleware
+2018-02-08 17:08:29,913 INFO 48030 [egg-security] use xssProtection middleware
+2018-02-08 17:08:29,915 INFO 48030 [egg-security] use xframe middleware
+2018-02-08 17:08:29,916 INFO 48030 [egg-security] use dta middleware
+2018-02-08 17:08:29,916 INFO 48030 [egg-security] compose 7 middlewares into one security middleware
+2018-02-08 17:08:29,981 INFO 48030 [egg-watcher:app] watcher start success
+2018-02-08 17:08:43,558 INFO 48030 [egg-view-nunjucks] loading templates from ["/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/view"]

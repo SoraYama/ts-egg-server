@@ -90,13 +90,6 @@
       "fileExtensions": [],
       "whitelist": null
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false
-    },
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
@@ -122,12 +115,21 @@
     },
     "view": {
       "root": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/view",
-      "cache": false,
+      "cache": true,
       "defaultExtension": ".html",
-      "defaultViewEngine": "",
-      "mapping": {}
+      "defaultViewEngine": "nunjucks",
+      "mapping": {
+        ".tpl": "nunjucks"
+      }
     },
-    "env": "local",
+    "nunjucks": {
+      "autoescape": true,
+      "throwOnUndefined": false,
+      "trimBlocks": false,
+      "lstripBlocks": false,
+      "cache": true
+    },
+    "env": "unittest",
     "name": "big-screen-data-server-demo",
     "keys": "<String len: 17>",
     "proxy": false,
@@ -138,17 +140,24 @@
       "name": "big-screen-data-server-demo",
       "description": "a simple data generator",
       "dependencies": {
-        "egg": "^2.3.0"
+        "egg": "^2.3.0",
+        "egg-view-nunjucks": "^2.1.4",
+        "moment": "^2.20.1"
       },
       "scripts": {
         "dev": "egg-bin dev",
-        "start": "tsc && npm run dev"
+        "start": "tsc && npm run dev",
+        "test": "egg-bin test",
+        "cov": "egg-bin cov"
       },
       "devDependencies": {
         "egg-bin": "^4.3.7",
-        "log4js": "^2.5.2"
+        "egg-mock": "^3.14.0",
+        "log4js": "^2.5.2",
+        "mocha": "^5.0.0"
       },
-      "private": true
+      "private": true,
+      "License": "MIT"
     },
     "baseDir": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo",
     "HOME": "/Users/Godric",
@@ -184,19 +193,17 @@
     "logger": {
       "dir": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/logs/big-screen-data-server-demo",
       "encoding": "utf8",
-      "env": "local",
+      "env": "unittest",
       "level": "INFO",
-      "consoleLevel": "INFO",
+      "consoleLevel": "WARN",
       "disableConsoleAfterReady": false,
       "outputJSON": false,
-      "buffer": true,
+      "buffer": false,
       "appLogName": "big-screen-data-server-demo-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": true,
       "type": "agent"
     },
@@ -242,6 +249,14 @@
     "clusterClient": {
       "responseTimeout": 60000
     },
+    "middleware": [
+      "robot"
+    ],
+    "robot": {
+      "ua": [
+        {}
+      ]
+    },
     "coreMiddlewares": [
       "meta",
       "siteFile",
@@ -249,8 +264,12 @@
       "bodyParser",
       "overrideMethod"
     ],
-    "appMiddlewares": [],
-    "appMiddleware": []
+    "appMiddlewares": [
+      "robot"
+    ],
+    "appMiddleware": [
+      "robot"
+    ]
   },
   "plugins": {
     "session": {
@@ -336,21 +355,6 @@
       "path": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-multipart",
       "version": "2.0.0"
     },
-    "development": {
-      "enable": true,
-      "package": "egg-development",
-      "name": "development",
-      "dependencies": [
-        "watcher"
-      ],
-      "optionalDependencies": [],
-      "env": [
-        "local"
-      ],
-      "from": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/plugin.js",
-      "path": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-development",
-      "version": "2.2.0"
-    },
     "schedule": {
       "enable": true,
       "package": "egg-schedule",
@@ -396,6 +400,29 @@
       "from": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/plugin.js",
       "path": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view",
       "version": "2.0.0"
+    },
+    "nunjucks": {
+      "enable": true,
+      "package": "egg-view-nunjucks",
+      "name": "nunjucks",
+      "dependencies": [
+        "security",
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/plugin.js",
+      "path": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view-nunjucks",
+      "version": "2.1.4"
+    },
+    "egg-mock": {
+      "enable": true,
+      "path": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-mock",
+      "name": "egg-mock",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "version": "3.14.0"
     }
   }
 }

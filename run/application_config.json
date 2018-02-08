@@ -92,6 +92,7 @@
         "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-logrotator/config/locales",
         "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-static/config/locales",
         "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view/config/locales",
+        "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view-nunjucks/config/locales",
         "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/locales",
         "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/locales"
       ],
@@ -150,11 +151,22 @@
       "files": "<LRU>"
     },
     "view": {
-      "root": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/view",
+      "root": [
+        "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/app/view"
+      ],
       "cache": false,
       "defaultExtension": ".html",
-      "defaultViewEngine": "",
-      "mapping": {}
+      "defaultViewEngine": "nunjucks",
+      "mapping": {
+        ".tpl": "nunjucks"
+      }
+    },
+    "nunjucks": {
+      "autoescape": true,
+      "throwOnUndefined": false,
+      "trimBlocks": false,
+      "lstripBlocks": false,
+      "cache": false
     },
     "env": "local",
     "name": "big-screen-data-server-demo",
@@ -167,17 +179,24 @@
       "name": "big-screen-data-server-demo",
       "description": "a simple data generator",
       "dependencies": {
-        "egg": "^2.3.0"
+        "egg": "^2.3.0",
+        "egg-view-nunjucks": "^2.1.4",
+        "moment": "^2.20.1"
       },
       "scripts": {
         "dev": "egg-bin dev",
-        "start": "tsc && npm run dev"
+        "start": "tsc && npm run dev",
+        "test": "egg-bin test",
+        "cov": "egg-bin cov"
       },
       "devDependencies": {
         "egg-bin": "^4.3.7",
-        "log4js": "^2.5.2"
+        "egg-mock": "^3.14.0",
+        "log4js": "^2.5.2",
+        "mocha": "^5.0.0"
       },
-      "private": true
+      "private": true,
+      "License": "MIT"
     },
     "baseDir": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo",
     "HOME": "/Users/Godric",
@@ -276,6 +295,18 @@
     "clusterClient": {
       "responseTimeout": 60000
     },
+    "middleware": [
+      "robot"
+    ],
+    "news": {
+      "pageSize": 5,
+      "serverUrl": "https://hacker-news.firebaseio.com/v0"
+    },
+    "robot": {
+      "ua": [
+        {}
+      ]
+    },
     "coreMiddlewares": [
       "meta",
       "siteFile",
@@ -287,8 +318,12 @@
       "securities",
       "i18n"
     ],
-    "appMiddlewares": [],
-    "appMiddleware": [],
+    "appMiddlewares": [
+      "robot"
+    ],
+    "appMiddleware": [
+      "robot"
+    ],
     "multipartParseOptions": {
       "autoFields": false,
       "defCharset": "utf8",
@@ -446,6 +481,20 @@
       "from": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg/config/plugin.js",
       "path": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view",
       "version": "2.0.0"
+    },
+    "nunjucks": {
+      "enable": true,
+      "package": "egg-view-nunjucks",
+      "name": "nunjucks",
+      "dependencies": [
+        "security",
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/config/plugin.js",
+      "path": "/Users/Godric/Documents/PhantomTiger/big-screen-data-server-demo/node_modules/egg-view-nunjucks",
+      "version": "2.1.4"
     }
   }
 }
